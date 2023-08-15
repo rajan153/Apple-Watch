@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    border-radius: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+    background: linear-gradient(315deg, #C8DCE5 0%, #B6CCDA 100%);
+    padding: 1rem;
+}
+
+#topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#topIcon {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inputBar {
+    position: absolute;
+    right: 4rem;
+    border-radius: 6.25rem;
+    background: rgba(255, 255, 255, 0.27);
+    height: 1.9rem;
+    width: 10rem;
+    top: 1.65rem;
+    border: 0;
+    outline: 0;
+    padding-left: 1rem;
+    padding-right: 2.1rem;
+    z-index: -1;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
+}
+
+#searchIcon {
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+/* Main Section Starts from here */
+
+#mainContentSection {
+    position: relative;
+    margin-top: 2rem;
+}
+
+#content {
+    color: #FFF;
+    /* font-size: 1.9731770rem; */
+    font-size: 1.29rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.1875rem;
+    letter-spacing: 0.04rem;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.93rem;
+}
+
+#btn {
+    position: relative;
+    width: 9.4375rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    border: 3px solid #FFF;
+    color: #FFFAFA;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+    border-radius: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+    background: linear-gradient(315deg, #C8DCE5 0%, #B6CCDA 100%);
+}
+
+#images {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 4rem;
+    right: 1rem;
+
+}
+
+/* Image2 is off */
+#image2 {
+    display: none;
+}
+
+/* Shadows */
+#shadows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#shadow1 {
+    width: 12.32206rem;
+    height: 1.606rem;
+    flex-shrink: 0;
+    fill: #ABC6D6;
+    filter: blur(20.5px);
+}
+
+#shadow2 {
+    width: 12rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    fill: #ABC6D6;
+    filter: blur(20.5px);
+}
+
+/* Footer */
+#footerSection {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+#socialMediaIcon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#menuBar {
+    z-index: 1;
+}
+
+#menuBar2 {
+    display: none;
+}
+
+/* Icons Hover */
+
+#shoppingBag:hover {
+    cursor: pointer;
+}
+
+#btn:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#menuBar:hover {
+    cursor: pointer;
+}
+
+#facebookIcon:hover,
+#twitterIcon:hover,
+#linkedinIcon:hover {
+    cursor: pointer;
+}
+
+/* SlideMenu Bar */
+
+#slideMenuContent a {
+    text-decoration: none;
+    color: #ABC6D6;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+
+#slideMenuContent a:hover {
+    color: #404354;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+#slideMenuContent {
+    position: absolute;
+    padding-top: 6rem;
+    width: 66%;
+    min-height: 100%;
+    background: #FFF;
+    z-index: 1;
+    display: none;
+}
+
+#slideMenuContent2 {
+    display: none;
+}
+
+#optionWatches {
+    display: none;
+}
+
+/* Meida Query for Width:375px */
+
+@media screen and (min-width:375px) {
+
+    /* Main Section */
+    #mainContentSection {
+        margin-top: 5rem;
+    }
+
+    /* Content */
+    #content {
+        font-size: 1.32rem;
+        line-height: 3.3875rem;
+        letter-spacing: 0.06rem;
+    }
+
+
+}
+
+
+/* Media Query for width:412px */
+
+@media screen and (min-width: 412px) {
+
+    /* Top Section */
+
+    #topSection {
+        margin-top: 1.5rem;
+    }
+
+    #inputBar {
+        top: 3.1rem;
+    }
+
+    /* Main Section */
+
+    #mainContentSection {
+        margin-top: 4rem;
+    }
+
+    /* Content Part */
+
+    #content {
+        font-size: 1.486rem;
+    }
+
+    p {
+        font-size: 2.19rem;
+    }
+
+    /* Button */
+    #btn {
+        margin-top: 3rem;
+    }
+
+    /* Images */
+    #images {
+        margin-top: 5rem;
+    }
+
+    /* Shadows */
+    #shadows {
+        margin-top: 1rem;
+    }
+
+
+}
+
+
+/* Media Query for width:768px */
+
+@media screen and (min-width:768px) {
+
+    /* Top Section */
+
+    #topSection {
+        margin-top: 0;
+    }
+
+    /* Upper Full View */
+    #wrapper {
+        padding: 2rem;
+    }
+
+    #inputBar {
+        top: 2.6rem;
+        right: 5rem;
+    }
+
+    /* Main Section */
+
+    #mainContentSection {
+        margin-top: 2.9rem;
+    }
+
+    /* Content */
+    #content {
+        font-size: 2.67rem;
+        line-height: 5.5rem;
+        letter-spacing: 0.18rem;
+    }
+
+    /* Paragraph */
+    p {
+        font-size: 4rem;
+    }
+
+    /* Footer Part */
+    #footerSection {
+        padding: 2rem;
+    }
+}
+
+
+/* Media Query for width: 810px */
+
+
+@media screen and (min-width:810px) {
+
+    /* Main Content */
+
+    #mainContentSection {
+        margin-top: 5rem;
+    }
+
+    /* Content */
+
+    #content {
+        font-size: 2.8rem;
+        line-height: 5.5rem;
+        letter-spacing: 0.18rem;
+    }
+
+    p {
+        font-size: 4.1rem;
+    }
+}
+
+
+/* Media Query for Width: 1080 px */
+
+@media screen and (min-width:1080px) {
+
+    /* Body */
+    body {
+        overflow: hidden;
+    }
+
+    /* Main Section */
+
+    #main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #wrapper {
+        height: 100vh;
+        width: 94vw;
+    }
+
+    /* Apple Logo */
+    #appleLogo {
+        z-index: 1;
+    }
+
+    /* Top Icons */
+    #topIcon {
+        z-index: 5;
+    }
+
+    /* Images */
+
+    #images {
+        position: relative;
+        top: -26rem;
+        right: -58rem;
+        width: 25px;
+    }
+
+
+    /* Content */
+
+    #content {
+        font-size: 1.6rem;
+        line-height: 3.8rem;
+        letter-spacing: 0.18rem;
+    }
+
+
+    /* paraGraph */
+
+    p {
+        font-size: 2.37rem;
+    }
+
+
+    #shadow1 {
+        position: absolute;
+        top: 25rem;
+        right: 9rem;
+    }
+
+    #mainContentSection {
+        position: relative;
+        top: -1rem;
+        height: 100vh;
+    }
+
+
+    /* Image1 is off */
+    #image1 {
+        display: none;
+    }
+
+    /* Image2 is ON */
+    #image2 {
+        display: block;
+    }
+
+    /* Shadow2 is OFF */
+    #shadow2 {
+        display: none;
+    }
+
+    /* Option Watches */
+    #optionWatches {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        bottom: 13rem;
+        right: 3rem;
+    }
+
+    #option1 {
+        width: 8.1875rem;
+        height: 4.375rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        background: rgba(67, 69, 88, 0.60);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    #option2 {
+        width: 8.1875rem;
+        height: 4.375rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        background: rgba(106, 221, 204, 0.60);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    #option3 {
+        width: 8.1875rem;
+        height: 4.375rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        background: rgba(249, 205, 196, 0.60);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    /* Hover on Option Watches */
+    #option1:hover,
+    #option2:hover,
+    #option3:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    /* Footer Section */
+
+    #footerSection {
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        height: 100vh;
+    }
+
+    /* Socail Media */
+    #socialMediaIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* SlideMenu Bar */
+
+    #slideMenuContent {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        left: 9rem;
+        margin-top: 0;
+        margin: 0;
+        padding-top: 2.8rem;
+        z-index: 0;
+        background: linear-gradient(315deg, #C8DCE5 0%, #B6CCDA 100%);
+        column-count: 5;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+
+    }
+
+    #slideMenuContent a {
+        padding: 0;
+        width: 9rem;
+        color: #FFF;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #slideMenuContent a:hover {
+        width: 8.125rem;
+        height: 2.25rem;
+        flex-shrink: 0;
+        border-radius: 6.25rem;
+        background: #FFF;
+        color: #B6CCDA;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* Media Query for width 1280px */
+
+@media screen and (min-width: 1280px) {
+    #wrapper{
+        width: 95vw;
+    }
+
+    #images{
+        top: -30rem;
+        left: 70rem;
+    }
+
+    #content{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+    p {
+        font-size: 3.55rem;
+    }
+
+    #slideMenuContent{
+        left: 5rem;
+        padding-left: 6rem;
+    }
+    #slideMenuContent a{
+        width: 9rem;
+    }
+}
+
+/* Media Query for width-1920px */
+@media screen and (min-width: 1920px) {
+    #content{
+        font-size: 5rem;
+        line-height: 9rem;
+    }
+    p{
+        font-size: 7.5rem;
+    }
+    #images{
+        top: -40rem;
+        left: 109rem;
+    }
+    #shadow1{
+        top: 31rem;
+    }
+    
+}
