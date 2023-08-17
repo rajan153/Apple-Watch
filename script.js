@@ -1,43 +1,29 @@
-const searchIcon = document.getElementById("sIcon");
-const inputBar = document.getElementById("inputBar");
-const menuBar = document.getElementById("menuBar");
-const slideMenuContent = document.getElementById("slideMenuContent");
-const menuBar2 = document.getElementById("menuBar2");
-const slideMenuContent2 = document.getElementById("slideMenuContent2");
+const menuBarIcon = document.getElementById("menuBarIcon");
+const menuBarOptions = document.getElementById("menuBarOptions");
+const searchBarIcon = document.getElementById("searchBarIcon");
+const inputField = document.getElementById("inputField");
 
-// Search Bar
-searchIcon.addEventListener("click", () => {
-    if(inputBar.style.display === "none")
+// MenuBar System
+menuBarIcon.addEventListener("click", () => {
+    
+    if(menuBarOptions.style.display === "none")
     {
-        inputBar.style.display = "block";
+        menuBarOptions.style.display = "block";
     }
     else
     {
-        inputBar.style.display = "none";
+        menuBarOptions.style.display = "none";
     }
 },false)
 
-// Menu Bar
-menuBar.addEventListener("click", () => {
-    if(slideMenuContent.style.display === "none")
+// Input Section
+searchBarIcon.addEventListener("click", () => {
+    if(inputField.style.display === "none")
     {
-        slideMenuContent.style.display = "block";
+        inputField.style.display = "block";
     }
     else
     {
-        slideMenuContent.style.display = "none";
+        inputField.style.display = "none";
     }
-},false)
-
-
-// MenuBar 2
-menuBar2.addEventListener("click", () => {
-    if(slideMenuContent2.style.display === "none")
-    {
-        slideMenuContent2.style.display = "block";
-    }
-    else
-    {
-        slideMenuContent2.style.display = "none";
-    }
-},false)
+})
