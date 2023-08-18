@@ -1,5 +1,5 @@
 const menuBarIcon = document.getElementById("menuBarIcon");
-const menuBarOptions = document.getElementById("menuBarOptions");
+const menuBarOptions = document.querySelector("ul")
 const searchBarIcon = document.getElementById("searchBarIcon");
 const inputField = document.getElementById("inputField");
 
