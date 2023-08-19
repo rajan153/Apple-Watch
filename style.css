@@ -289,7 +289,7 @@ a:hover{
         margin-top: 2rem;
         margin-left: 9rem;
         height: 4rem;
-        width: 50rem;
+        width: 51%;
         column-count: 5;
     }
     #menuBarOptions ul li{
@@ -298,7 +298,7 @@ a:hover{
     }
     #menuBarOptions a{
         color: #FFF;
-        font-size: 1.125rem;
+        font-size: 1.5vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -308,12 +308,12 @@ a:hover{
     }
     #menuBarOptions a:hover{
         color: #B6CCDA;
-        font-size: 1.125rem;
+        font-size: 1.5vw;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        width: 8.125rem;
-        height: 2.25rem;
+        width: 100%;
+        height: 60%;
         flex-shrink: 0;
         border-radius: 6.25rem;
         background: #FFF;
@@ -367,7 +367,7 @@ a:hover{
 /* Media Query for wisth 1280 */
 @media screen and (min-width: 1280px) {
     h1, p{
-        font-size: 4.941vw;
+        font-size: 4.9vw;
     }
     #menuBarOptions ul{
         margin-left: 13%;
@@ -395,7 +395,7 @@ a:hover{
 }
 
 /* Media Query for width 1920 */
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
     #wrapper{
         padding: 4rem;
         height: 100vh;
@@ -413,12 +413,12 @@ a:hover{
         margin-top: 15%;
         gap: 3rem;
     }
-}
+} */
 
 
 
 /* Media Query for width 3840*/
-@media screen and (min-width: 3840px) {
+/* @media screen and (min-width: 3840px) {
     #wrapper, footer{
         height: 100vh;
     }
@@ -430,4 +430,4 @@ a:hover{
         margin-bottom: 20rem;
         gap: 8rem;
     }
-}
+} */
